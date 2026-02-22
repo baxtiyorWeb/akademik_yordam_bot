@@ -1,3 +1,4 @@
 .env
 .vaultify/
 *.env
+venv
