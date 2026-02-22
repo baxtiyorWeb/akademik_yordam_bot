@@ -60,9 +60,9 @@ log = logging.getLogger(__name__)
 # ENV
 # ════════════════════════════════════════════════
 load_dotenv()
-TOKEN      = os.getenv("TELEGRAM_TOKEN", "8566361305:AAGZARrVlfZoVATqez_MRTWehiZjWckVHGg")
-GEMINI_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAEO8E7RKx_c76WFNE8mTNjVMW5X46xh3g")
-PEXELS_KEY = os.getenv("PEXELS_API_KEY", "563492ad6f917000010000014744f333f2e647ffaa4c2609ec5be16f")
+TOKEN      = os.getenv("TELEGRAM_TOKEN", "")
+GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
+PEXELS_KEY = os.getenv("PEXELS_API_KEY", "")
 ADMIN_IDS  = {int(x) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip().isdigit()}
 
 if not TOKEN or not GEMINI_KEY:
